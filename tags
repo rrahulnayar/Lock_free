@@ -1,0 +1,75 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Data	test.cc	/^  Data() : a(-1), b(-1) { }$/;"	f	struct:Data
+Data	test.cc	/^  Data(int x, int y) : a(x), b(y) { }$/;"	f	struct:Data
+Data	test.cc	/^struct Data {$/;"	s	file:
+Entry	queues.h	/^  struct Entry {$/;"	s	class:MultipleProducerSingleConsumerFixedSizeQueue
+Entry	queues.h	/^  struct Entry {$/;"	s	class:SingleProducerMultipleConsumerFixedSizeQueue
+Entry	queues.h	/^  struct Entry {$/;"	s	class:SingleProducerSingleConsumerFixedSizeQueue
+FixedSizeQueueInterface	queues.h	/^class FixedSizeQueueInterface {$/;"	c
+GCC	Makefile	/^GCC = icc$/;"	m
+MultipleProducerSingleConsumerFixedSizeQueue	queues.h	/^  MultipleProducerSingleConsumerFixedSizeQueue(int max_size)$/;"	f	class:MultipleProducerSingleConsumerFixedSizeQueue
+MultipleProducerSingleConsumerFixedSizeQueue	queues.h	/^class MultipleProducerSingleConsumerFixedSizeQueue : public FixedSizeQueueInterface<T> {$/;"	c
+MutexFixedSizeQueue	queues.h	/^  MutexFixedSizeQueue(int max_size) : max_size_(max_size) { }$/;"	f	class:MutexFixedSizeQueue
+MutexFixedSizeQueue	queues.h	/^class MutexFixedSizeQueue : public FixedSizeQueueInterface<T> {$/;"	c
+QUEUES_H_	queues.h	2;"	d
+Read	queues.h	/^  bool Read(T* data) {$/;"	f	class:MutexFixedSizeQueue
+Read	queues.h	/^  virtual bool Read(T* w) {$/;"	f	class:MultipleProducerSingleConsumerFixedSizeQueue
+Read	queues.h	/^  virtual bool Read(T* w) {$/;"	f	class:SingleProducerMultipleConsumerFixedSizeQueue
+Read	queues.h	/^  virtual bool Read(T* w) {$/;"	f	class:SingleProducerSingleConsumerFixedSizeQueue
+ScopedLock	queues.h	/^    ScopedLock(std::mutex* mutex) : mutex_(mutex) {$/;"	f	class:MutexFixedSizeQueue::ScopedLock
+ScopedLock	queues.h	/^  class ScopedLock {$/;"	c	class:MutexFixedSizeQueue
+SingleProducerMultipleConsumerFixedSizeQueue	queues.h	/^  SingleProducerMultipleConsumerFixedSizeQueue(int max_size)$/;"	f	class:SingleProducerMultipleConsumerFixedSizeQueue
+SingleProducerMultipleConsumerFixedSizeQueue	queues.h	/^class SingleProducerMultipleConsumerFixedSizeQueue : public FixedSizeQueueInterface<T> {$/;"	c
+SingleProducerSingleConsumerFixedSizeQueue	queues.h	/^  SingleProducerSingleConsumerFixedSizeQueue(int max_size)$/;"	f	class:SingleProducerSingleConsumerFixedSizeQueue
+SingleProducerSingleConsumerFixedSizeQueue	queues.h	/^class SingleProducerSingleConsumerFixedSizeQueue : public FixedSizeQueueInterface<T> {$/;"	c
+TEST_MPSC	test.cc	12;"	d	file:
+TEST_RW	test.cc	9;"	d	file:
+TEST_SPMC	test.cc	11;"	d	file:
+TEST_SPSC	test.cc	10;"	d	file:
+Write	queues.h	/^  bool Write(const T& data) {$/;"	f	class:MutexFixedSizeQueue
+Write	queues.h	/^  virtual bool Write(const T& w) {$/;"	f	class:MultipleProducerSingleConsumerFixedSizeQueue
+Write	queues.h	/^  virtual bool Write(const T& w) {$/;"	f	class:SingleProducerMultipleConsumerFixedSizeQueue
+Write	queues.h	/^  virtual bool Write(const T& w) {$/;"	f	class:SingleProducerSingleConsumerFixedSizeQueue
+a	test.cc	/^  int a;$/;"	m	struct:Data	file:
+b	test.cc	/^  int b;$/;"	m	struct:Data	file:
+buffer_	queues.h	/^  Entry* buffer_;$/;"	m	class:MultipleProducerSingleConsumerFixedSizeQueue
+buffer_	queues.h	/^  Entry* buffer_;$/;"	m	class:SingleProducerMultipleConsumerFixedSizeQueue
+buffer_	queues.h	/^  Entry* buffer_;$/;"	m	class:SingleProducerSingleConsumerFixedSizeQueue
+consumer_func	test.cc	/^void consumer_func(FixedSizeQueueInterface<Data>* queue, int total_pulls) {$/;"	f
+data	queues.h	/^    T data;$/;"	m	struct:MultipleProducerSingleConsumerFixedSizeQueue::Entry
+data	queues.h	/^    T data;$/;"	m	struct:SingleProducerMultipleConsumerFixedSizeQueue::Entry
+data	queues.h	/^    T data;$/;"	m	struct:SingleProducerSingleConsumerFixedSizeQueue::Entry
+head_	queues.h	/^  int head_ __attribute__((aligned(64)));$/;"	m	class:MultipleProducerSingleConsumerFixedSizeQueue
+head_	queues.h	/^  int head_ __attribute__((aligned(64)));$/;"	m	class:SingleProducerMultipleConsumerFixedSizeQueue
+head_	queues.h	/^  int head_ __attribute__((aligned(64)));$/;"	m	class:SingleProducerSingleConsumerFixedSizeQueue
+isEmpty	queues.h	/^  bool isEmpty() {$/;"	f	class:MultipleProducerSingleConsumerFixedSizeQueue
+isEmpty	queues.h	/^  bool isEmpty() {$/;"	f	class:MutexFixedSizeQueue
+isEmpty	queues.h	/^  bool isEmpty() {$/;"	f	class:SingleProducerMultipleConsumerFixedSizeQueue
+isEmpty	queues.h	/^  bool isEmpty() {$/;"	f	class:SingleProducerSingleConsumerFixedSizeQueue
+kMaxQueueSize	test.cc	/^const int kMaxQueueSize = 1000;$/;"	v
+kNumOperations	test.cc	/^const int kNumOperations = 10000000;$/;"	v
+main	test.cc	/^int main(int argc, char *argv[]) {$/;"	f
+max_size_	queues.h	/^  int max_size_;$/;"	m	class:MultipleProducerSingleConsumerFixedSizeQueue
+max_size_	queues.h	/^  int max_size_;$/;"	m	class:MutexFixedSizeQueue
+max_size_	queues.h	/^  int max_size_;$/;"	m	class:SingleProducerMultipleConsumerFixedSizeQueue
+max_size_	queues.h	/^  int max_size_;$/;"	m	class:SingleProducerSingleConsumerFixedSizeQueue
+mutex_	queues.h	/^    std::mutex* mutex_;$/;"	m	class:MutexFixedSizeQueue::ScopedLock
+mutex_	queues.h	/^  std::mutex mutex_;$/;"	m	class:MutexFixedSizeQueue
+producer_func	test.cc	/^void producer_func(FixedSizeQueueInterface<Data>* queue, int total_pushes) {$/;"	f
+queue_	queues.h	/^  std::deque<T> queue_;$/;"	m	class:MutexFixedSizeQueue
+tail_	queues.h	/^  int tail_ __attribute__((aligned(64)));$/;"	m	class:MultipleProducerSingleConsumerFixedSizeQueue
+tail_	queues.h	/^  int tail_ __attribute__((aligned(64)));$/;"	m	class:SingleProducerMultipleConsumerFixedSizeQueue
+tail_	queues.h	/^  int tail_ __attribute__((aligned(64)));$/;"	m	class:SingleProducerSingleConsumerFixedSizeQueue
+valid	queues.h	/^    bool valid; $/;"	m	struct:MultipleProducerSingleConsumerFixedSizeQueue::Entry
+valid	queues.h	/^    bool valid; $/;"	m	struct:SingleProducerMultipleConsumerFixedSizeQueue::Entry
+valid	queues.h	/^    bool valid; $/;"	m	struct:SingleProducerSingleConsumerFixedSizeQueue::Entry
+~FixedSizeQueueInterface	queues.h	/^  virtual ~FixedSizeQueueInterface() { }$/;"	f	class:FixedSizeQueueInterface
+~MultipleProducerSingleConsumerFixedSizeQueue	queues.h	/^  ~MultipleProducerSingleConsumerFixedSizeQueue() {$/;"	f	class:MultipleProducerSingleConsumerFixedSizeQueue
+~ScopedLock	queues.h	/^    ~ScopedLock() {$/;"	f	class:MutexFixedSizeQueue::ScopedLock
+~SingleProducerMultipleConsumerFixedSizeQueue	queues.h	/^  ~SingleProducerMultipleConsumerFixedSizeQueue() {$/;"	f	class:SingleProducerMultipleConsumerFixedSizeQueue
+~SingleProducerSingleConsumerFixedSizeQueue	queues.h	/^  ~SingleProducerSingleConsumerFixedSizeQueue() {$/;"	f	class:SingleProducerSingleConsumerFixedSizeQueue
